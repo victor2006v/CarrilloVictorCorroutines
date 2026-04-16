@@ -1,5 +1,6 @@
 # CarrilloVictorCoroutines
 
+Una aplicació d'Android senzilla que demostra l'ús de les **Coroutines de Kotlin** per gestionar tasques en segon pla i actualitzacions de la interfície d'usuari (UI).
 
 ## Descripció
 
@@ -12,6 +13,8 @@ Aquesta aplicació simula un procés de descàrrega per mostrar com es poden uti
 *   **UI Reactiva:** El botó es desactiva durant el procés i es torna a activar quan finalitza, mostrant missatges d'estat a l'usuari.
 
 ## Estats de l'Aplicació
+
+A continuació es mostren els tres estats de l'aplicació durant el procés de descàrrega:
 
 | Ready | Downloading | Downloaded |
 | :---: | :---: | :---: |
@@ -49,7 +52,17 @@ btnDownload.setOnClickListener {
         btnDownload.isEnabled = true
     }
 }
+```
 
+## Requisits
 
+*   Android Studio Chipmunk o superior.
+*   JDK 1.8.
+*   Android API 21+ (Lollipop).
 
+## Com Executar
 
+1.  Clona el repositori o descarrega el codi font.
+2.  Obre el projecte amb Android Studio.
+3.  Connecta un dispositiu físic o utilitza un emulador.
+4.  Fes clic a "Run 'app'".
